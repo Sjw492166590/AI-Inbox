@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="74" y1="54" x2="438" y2="462" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7AE7E7"/>
+      <stop offset="0.45" stop-color="#30C2D8"/>
+      <stop offset="1" stop-color="#2E63E7"/>
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="132" y1="104" x2="382" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#D8F2FF" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="182" y1="126" x2="350" y2="376" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.55" stop-color="#F6FBFF"/>
+      <stop offset="1" stop-color="#C7DDF0"/>
+    </linearGradient>
+    <filter id="shadow" x="22" y="22" width="468" height="468" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="20"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0196078 0 0 0 0 0.0862745 0 0 0 0 0.188235 0 0 0 0.34 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+    <filter id="markGlow" x="112" y="88" width="288" height="336" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+      <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_0_1" result="shape"/>
+      <feGaussianBlur stdDeviation="8" result="effect2_foregroundBlur_0_1"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <rect x="46" y="42" width="420" height="420" rx="110" fill="url(#bg)"/>
+    <rect x="62" y="58" width="388" height="388" rx="94" fill="url(#innerGlow)" fill-opacity="0.12"/>
+    <path d="M88 150C111 93 163 62 242 62H352C408 62 450 104 450 160V254C450 314 422 355 370 390C321 423 273 442 212 450" stroke="white" stroke-opacity="0.18" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="160" cy="140" r="74" fill="white" fill-opacity="0.12"/>
+    <circle cx="338" cy="338" r="110" fill="#0F8FB5" fill-opacity="0.16"/>
+  </g>
+  <g filter="url(#markGlow)">
+    <path d="M335 280C335 320 308 350 269 350C231 350 203 321 203 277C203 232 232 199 272 199C306 199 332 223 337 258V303C337 320 347 330 363 330C393 330 418 298 418 250C418 166 348 104 251 104C154 104 88 172 88 264C88 358 160 422 264 422C307 422 346 411 379 390" stroke="#A4CCEA" stroke-opacity="0.35" stroke-width="18" stroke-linecap="round"/>
+    <path d="M332 164C306 135 270 118 229 118C150 118 100 173 100 255C100 341 159 396 248 396C285 396 319 387 348 370" stroke="url(#mark)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M333 254C333 298 306 328 271 328C236 328 211 301 211 266C211 230 236 203 271 203C306 203 333 230 333 266V303C333 320 345 330 360 330C378 330 392 315 392 282" stroke="url(#mark)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

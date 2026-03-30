@@ -1,0 +1,42 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "AI Inbox",
+  "version": "0.1.2",
+  "identifier": "com.aiinbox.desktop",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:4173",
+    "beforeDevCommand": "pnpm dev --host 0.0.0.0 --port 4173",
+    "beforeBuildCommand": "pnpm build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "AI Inbox",
+        "width": 840,
+        "height": 620,
+        "minWidth": 720,
+        "minHeight": 560,
+        "center": true,
+        "visible": false,
+        "decorations": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

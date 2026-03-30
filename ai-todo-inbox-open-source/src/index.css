@@ -1,0 +1,40 @@
+:root {
+  color: #1a2532;
+  background:
+    radial-gradient(circle at 14% 16%, rgba(229, 168, 110, 0.14), transparent 26%),
+    radial-gradient(circle at 86% 12%, rgba(85, 145, 184, 0.15), transparent 22%),
+    linear-gradient(180deg, #f4ece2 0%, #ede2d5 48%, #e8ddd1 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  color: #e8edf6;
+  background:
+    radial-gradient(circle at 14% 16%, rgba(83, 133, 196, 0.18), transparent 26%),
+    radial-gradient(circle at 86% 12%, rgba(46, 193, 182, 0.12), transparent 22%),
+    linear-gradient(180deg, #09131d 0%, #0d1723 52%, #111d2b 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  color: inherit;
+  background: inherit;
+}
